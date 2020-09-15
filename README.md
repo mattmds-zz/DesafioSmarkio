@@ -4,7 +4,7 @@ Teste automatizado E-commerce
 
 Teste criado para o Desafio Smarkio QA jr.
 
-Ferramentas utilizadas: Selenium e ChromeDriver
+Ferramentas utilizadas: Selenium e ChromeDriver<br>
 Linguagem: Phyton
 Site para teste: https://www.submarino.com.br/
 
@@ -30,10 +30,10 @@ Para finalizar minha compra
 
 Cenário 1: Produto Adicionado ao carrinho
 Dado que já localizei o produto
-Quando clico no botão comprar
+Quando clico sobre ele, e em seguida nos botões comprar, e continuar
 Então o produto é adicionado ao carrinho de compras
 
 Cenário 2: Produto não Adicionado ao carrinho
 Dado que já localizei o produto
-Quando clico no botão comprar
+Quando clico sobre ele, e em seguida nos botões comprar, e continuar
 Então um erro é gerado
