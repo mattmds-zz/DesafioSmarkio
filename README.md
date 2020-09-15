@@ -2,13 +2,13 @@
 
 Teste automatizado E-commerce
 
-Teste criado para o Desafio Smarkio QA jr.
+<b>Teste criado para o Desafio Smarkio QA jr.</b>
 
 Ferramentas utilizadas: Selenium e ChromeDriver<br>
 Linguagem: Phyton<br>
 Site para teste: https://www.submarino.com.br/
 
-Funcionalidade 1: Localizar produto em site<br>
+<b>Funcionalidade 1</b>: Localizar produto em site<br>
 Como usuário<br>
 Quero buscar um produto no site<br>
 Para saber se a loja o comercializa
