@@ -18,7 +18,7 @@ botao_pesquisar = navegador.find_element_by_xpath('//*[@id="h_search-btn"]') #se
 botao_pesquisar.click() #acionando botão de busca
 
 #Teste de retorno de busca: Funcionalidade 1
-if navegador.find_elements_by_css_selector('#content-middle > div:nth-child(6) > div > div > div'):
+if navegador.find_elements_by_css_selector('#content-middle > div:nth-child(6) > div > div > div > div.EmptyPage__Content-sc-1u8xkxt-0.cvTGHt.ViewUI-sc-1ijittn-6.iXIDWU > span.TextUI-sc-12tokcy-0.gqIygL > span'):
     #Cenário 1: Produto não encontrado
     sleep(3)
     print("Sem resultados de busca")
@@ -30,10 +30,10 @@ else:
     sleep(2)
     botao_comprar = navegador.find_element_by_css_selector('#btn-buy > div')
     botao_comprar.click() #acionando botão comprar
-    bota_continuar = navegador.find_element_by_css_selector('#btn-continue')
+    bota_continuar = WebDriverWait(navegador, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#btn-continue')))
     bota_continuar.click() #acionando o botão continuar compra
     #Teste de envio ao Carrinho de Compras: Funcionalidade 2
-    if navegador.find_element_by_css_selector('#app > section > section > div.productsandfreight__wrapper > div.basket-products'):
+    if navegador.find_element_by_class_name('basket__wrapper'):
         #Cenário 1: Produto adicionado ao carrinho
         sleep(2)
         print("teste ok")
