@@ -16,12 +16,12 @@ Para saber se a loja o comercializa
 Cenário 1: Produto Encontrado
 Dado que estou com o site aberto
 Quando digito o produto no campo de busca e clico no botão pesquisar
-Então é será carregada uma página com os produtos correspondentes
+Então será carregada uma página com os produtos correspondentes
 
 Cenário 2: Produto não Encontrado
 Dado que estou com o site aberto
 Quando digito o produto no campo de busca e clico no botão pesquisar
-Então é será carregada uma página informando que o produto não foi localizado
+Então será carregada uma página informando que o produto não foi localizado
 
 Funcionalidade 2: Adicionar Produto ao Carrinho
 Como usuário
